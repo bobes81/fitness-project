@@ -22,3 +22,14 @@ body {
     color: #29AB87;
   }
   
+  /* Styl pro AI avatar */
+.avatar {
+    width: 150px;       /* Změna šířky obrázku */
+    height: 150px;      /* Změna výšky obrázku */
+    border-radius: 50%; /* Kulatý rámeček */
+    object-fit: cover;  /* Ořízne obrázek, aby se vešel do kruhu */
+    border: 3px solid #29AB87; /* Zelený rámeček (army green) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín pod obrázkem */
+    margin-top: 10px;   /* Odsazení shora */
+  }
+  
