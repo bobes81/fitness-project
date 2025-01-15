@@ -1,11 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #EADDCA;
     text-align: center;
   }
   
   header {
-    background-color: #29AB87;
+    background-color: #1B4D3E;
     color: white;
     padding: 20px;
   }
@@ -19,9 +19,8 @@ body {
   
   a {
     text-decoration: none;
-    color: #29AB87;
+    color: #1B4D3E;
   }
-  
   /* Styl pro AI avatar */
 .avatar {
     width: 150px;       /* Změna šířky obrázku */
