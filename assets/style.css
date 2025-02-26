@@ -16,6 +16,39 @@ body {
     background-color: white;
     border-radius: 8px;
   }
+
+  #bmi-calculator {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #bmi-calculator input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #bmi-calculator button {
+    background-color: #1B4D3E;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #bmi-calculator button:hover {
+    background-color: #29AB87;
+  }
+  
+
   
   a {
     text-decoration: none;

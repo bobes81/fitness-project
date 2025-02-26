@@ -18,4 +18,28 @@ function sendMessage() {
     // Vymazání vstupu po odeslání
     document.getElementById("user-input").value = "";
   }
-  
+  // BMI calculator
+  function calculateBMI() {
+    let weight = document.getElementById("weight").value;
+    let height = document.getElementById("height").value;
+    let result = document.getElementById("bmi-result");
+
+    if (weight > 0 && height > 0) {
+        let bmi = (weight / (height * height)).toFixed(2);
+        let interpretation = "";
+
+        if (bmi < 18.5) {
+            interpretation = "Underweight";
+        } else if (bmi >= 18.5 && bmi < 24.9) {
+            interpretation = "Normal weight";
+        } else if (bmi >= 25 && bmi < 29.9) {
+            interpretation = "Overweight";
+        } else {
+            interpretation = "Obese";
+        }
+
+        result.innerHTML = `Your BMI is: <strong>${bmi}</strong> (${interpretation})`;
+    } else {
+        result.innerHTML = "Please enter valid weight and height!";
+    }
+}
