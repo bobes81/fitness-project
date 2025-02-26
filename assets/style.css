@@ -1,22 +1,71 @@
+/* General Page Styling */
 body {
   font-family: Arial, sans-serif;
   background-color: #EADDCA;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
+/* Header Styling */
 header {
   background-color: #1B4D3E;
   color: white;
-  padding: 20px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
 }
 
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* General Section Styling */
 section {
-  margin: 20px;
+  margin: 20px auto;
   padding: 20px;
   background-color: white;
   border-radius: 8px;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Get Inspired – Take the First Step Section */
+.inspiration {
+  background-color: #f8f1e4;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inspiration h2 {
+  color: #1B4D3E;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.inspiration-content {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.inspiration-content p {
+  margin-bottom: 15px;
+}
+
+/* BMI Calculator Styling */
 #bmi-calculator {
   background-color: #ffffff;
   padding: 20px;
@@ -42,13 +91,44 @@ section {
   margin-top: 10px;
   border-radius: 4px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 #bmi-calculator button:hover {
   background-color: #29AB87;
 }
 
+/* Footer */
+footer {
+  background-color: #1B4D3E;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px 10px 0 0;
+}
+
+footer a {
+  color: #EADDCA;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+/* Links Styling */
 a {
   text-decoration: none;
   color: #1B4D3E;
+}
+
+a:hover {
+  color: #29AB87;
 }
