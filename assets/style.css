@@ -96,6 +96,7 @@ h2 {
   border-radius: 10px;
   cursor: pointer;
   perspective: 1000px;
+  position: relative;
 }
 
 .exercise-card .front,
@@ -107,6 +108,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.6s;
 }
 
 .exercise-card .back {
@@ -122,4 +124,53 @@ h2 {
 
 .exercise-card.flipped .back {
   transform: rotateY(0deg);
+}
+
+/* Contact Form */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+#contact input,
+#contact textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact button {
+  background-color: #1B4D3E;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #29AB87;
+}
+
+/* Thank You & 404 Pages */
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.btn {
+  background-color: #1B4D3E;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #29AB87;
 }
