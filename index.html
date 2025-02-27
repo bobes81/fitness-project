@@ -23,36 +23,27 @@
     </nav>
   </div>
 
+  <!-- Background Overlay -->
+  <div class="background-overlay"></div>
+
+  <!-- Welcome Section -->
   <header id="welcome">
     <div class="welcome-container">
-        <!-- Obrázek vedle textu -->
-        <img src="assets/images/ivan-fitness.jpg" alt="Ivan Fitness" class="welcome-image">
-        
-        <div class="welcome-text">
-            <h1>Welcome to Ivan's Fitness</h1>
-            <p>Achieve the best results with a workout tailored to your BMI.</p>
-            <p>Welcome to Your Fitness Plan!</p>
-            <p>Here, I aim to help you achieve the best possible results based on your body mass index (BMI). 
-               Using the BMI calculator, we will select the most suitable workout plans for you. 
-               The plans are divided into five categories, each tailored to different BMI results:</p>
-            <ul>
-                <li><strong>Underweight:</strong> If your BMI indicates that you're underweight, we’ll focus on 
-                    strength-building exercises to help you gain muscle mass.</li>
-                <li><strong>Normal weight:</strong> For those in the healthy BMI range, we’ll focus on a balanced 
-                    workout plan that includes a mix of strength training and cardio.</li>
-                <li><strong>Overweight:</strong> If you fall into the overweight category, we’ll prioritize exercises 
-                    that help burn fat, improve cardiovascular health, and promote lean muscle development.</li>
-                <li><strong>Obese:</strong> For individuals in this category, the goal is to start with low-impact 
-                    exercises and focus on gradual weight loss while improving overall health.</li>
-                <li><strong>Muscle Building:</strong> For those aiming to build muscle mass, we’ll provide a more 
-                    intense workout plan with heavy lifting and targeted exercises.</li>
-            </ul>
-        </div>
+      <img src="assets/images/ivan-fitness.png" 
+           alt="Ivan Fitness" class="welcome-image">
+      <div class="welcome-text">
+        <h1>Welcome to Ivan's Fitness</h1>
+        <p>Achieve the best results with a workout tailored to your BMI.</p>
+        <p>Welcome to Your Fitness Plan!</p>
+        <p>Here, I aim to help you achieve the best possible results based on your body mass index (BMI).</p>
+      </div>
     </div>
-</header>
+  </header>
 
-
+  <!-- Inspiration Section -->
   <section id="inspiration" class="box">
+    <img src="assets/images/Leonardo_Phoenix_10_A_muscular_man_in_his_mid30s_with_short_me_2.png" 
+         alt="Get Inspired" class="section-image">
     <h2>Get Inspired – Take the First Step</h2>
     <p>Hi, I'm Ivan! I was born in the Czech Republic and have been living in the UK for over eight years. Fitness has become a fundamental part of my life, and recently, I’ve discovered a passion for programming as well.</p>
     <p>I started my fitness journey six years ago, so I know firsthand how challenging the beginning can be. But trust me, as time goes by, you’ll see your body transform, and you’ll feel much better in your "new body." I've restarted my journey multiple times because the biggest challenge isn’t the weights—it’s overcoming your own doubts.</p>
@@ -60,61 +51,69 @@
     <p>On this website, I want to inspire you to take the first step toward transforming your body. I have created simple, easy-to-follow categories to help you get started. If you are interested, I can also create a personalized workout plan for you. Feel free to reach out via the form or email.</p>
   </section>
 
+  <!-- BMI Calculator -->
   <section id="bmi-calculator" class="box">
+    <img src="assets/images/Leonardo_Phoenix_10_A_digital_illustration_of_a_BMI_calculator_0.png" 
+         alt="BMI Calculator" class="section-image">
     <h2>BMI Calculator</h2>
     <label for="weight">Weight (kg):</label>
     <input type="number" id="weight" placeholder="Enter your weight">
-    <label for="height">Height (m):</label>
+    <label for="height">Height (cm):</label>
     <input type="number" id="height" placeholder="Enter your height">
     <button onclick="calculateBMI()">Calculate</button>
     <p id="bmi-result"></p>
   </section>
 
+  <!-- Exercises Section -->
   <section id="exercises" class="box">
+    <img src="assets/images/Leonardo_Phoenix_10_A_vibrant_and_energetic_scene_at_a_1B4D3Et_0.png" 
+         alt="Exercises" class="section-image">
     <h2>Exercises for You</h2>
     <div class="exercise-grid">
       <div class="exercise-card" onclick="flipCard(this)">
         <div class="front">1. Underweight</div>
-        <div class="back">Focus on strength-building exercises to gain muscle.</div>
+        <div class="back">Strength-building exercises.</div>
       </div>
       <div class="exercise-card" onclick="flipCard(this)">
         <div class="front">2. Normal Weight</div>
-        <div class="back">A mix of strength training and cardio for balance.</div>
+        <div class="back">Balanced strength & cardio.</div>
       </div>
       <div class="exercise-card" onclick="flipCard(this)">
         <div class="front">3. Overweight</div>
-        <div class="back">Fat-burning exercises and lean muscle development.</div>
+        <div class="back">Fat-burning & muscle development.</div>
       </div>
       <div class="exercise-card" onclick="flipCard(this)">
         <div class="front">4. Obese</div>
-        <div class="back">Low-impact workouts for gradual weight loss.</div>
+        <div class="back">Low-impact weight loss workouts.</div>
       </div>
       <div class="exercise-card" onclick="flipCard(this)">
         <div class="front">5. Muscle Building</div>
-        <div class="back">Heavy lifting and targeted exercises.</div>
+        <div class="back">Heavy lifting & targeted training.</div>
       </div>
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact" class="box">
+    <img src="assets/images/CB4410A8-3C87-4676-821A-777524FB27D9.png" 
+         alt="Contact Me" class="section-image">
     <h2>Contact Me</h2>
     <form onsubmit="redirectToThankYou(event)">
       <label for="name">Name:</label>
       <input type="text" id="name" required>
-      
       <label for="email">Email:</label>
       <input type="email" id="email" required>
-      
       <label for="message">Message:</label>
       <textarea id="message" rows="4" required></textarea>
-      
       <button type="submit">Send</button>
     </form>
   </section>
 
   <footer>
-    <p>Contact</p>
-    <p>Ivan Kimpl | Email: <a href="mailto:ivan.kimpl@gmail.com" style="color: #1B4D3E;">ivan.kimpl@gmail.com</a></p>
+    <p>Ivan Kimpl | Email: <a href="mailto:ivan.kimpl@gmail.com">ivan.kimpl@gmail.com</a></p>
   </footer>
+
 </body>
 </html>
+
+

@@ -4,83 +4,81 @@
     document.addEventListener("DOMContentLoaded", () => {
         const hamburger = document.querySelector(".hamburger");
         const menu = document.getElementById("menu");
-      
-        // Toggle menu visibility on click
-        hamburger.addEventListener("click", () => {
-          menu.classList.toggle("active");
-        });
-      
-        // Close menu when clicking outside
-        document.addEventListener("click", (event) => {
-          if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
-            menu.classList.remove("active");
-          }
-        });
-      });
-      
 
-    /**
-     * Calculate BMI and display result
-     */
+        if (hamburger && menu) {
+            hamburger.addEventListener("click", () => {
+                menu.classList.toggle("active");
+            });
+
+            document.addEventListener("click", (event) => {
+                if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+                    menu.classList.remove("active");
+                }
+            });
+        }
+    });
+
     function calculateBMI() {
-        var weightInput = document.getElementById("weight");
-        var heightInput = document.getElementById("height");
-        var result = document.getElementById("bmi-result");
+        const weight = parseFloat(document.getElementById("weight").value);
+        const height = parseFloat(document.getElementById("height").value) / 100;
+        const result = document.getElementById("bmi-result");
 
-        if (!weightInput || !heightInput || !result) return;
-
-        var weight = parseFloat(weightInput.value);
-        var height = parseFloat(heightInput.value);
-
-        if (isNaN(weight) || isNaN(height) || height <= 0) {
-            result.innerHTML = "Please enter valid values!";
+        if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+            result.innerHTML = "⚠️ Enter valid values!";
             return;
         }
 
-        var bmi = (weight / (height * height)).toFixed(2);
-        result.innerHTML = "Your BMI is: <strong>" + bmi + "</strong> (" + getBMICategory(bmi) + ")";
+        const bmi = (weight / (height * height)).toFixed(2);
+        let category = "";
+
+        if (bmi < 18.5) category = "Underweight";
+        else if (bmi < 24.9) category = "Normal weight";
+        else if (bmi < 29.9) category = "Overweight";
+        else category = "Obese";
+
+        result.innerHTML = `✅ Your BMI is: <strong>${bmi}</strong> (${category})`;
+
+        // Highlight the corresponding exercise card
+        highlightExerciseCard(category);
     }
 
-    /**
-     * Return BMI category based on value
-     */
-    function getBMICategory(bmi) {
-        if (bmi < 18.5) return "Underweight";
-        if (bmi < 24.9) return "Normal weight";
-        if (bmi < 29.9) return "Overweight";
-        return "Obese";
+    function highlightExerciseCard(category) {
+        const exerciseCards = document.querySelectorAll(".exercise-card");
+        exerciseCards.forEach(card => card.classList.remove("highlight"));
+
+        let index;
+        switch (category) {
+            case "Underweight": index = 0; break;
+            case "Normal weight": index = 1; break;
+            case "Overweight": index = 2; break;
+            case "Obese": index = 3; break;
+            case "Muscle Building": index = 4; break;
+        }
+
+        if (exerciseCards[index]) {
+            exerciseCards[index].classList.add("highlight");
+        }
     }
 
-    /**
-     * Flip exercise card on click
-     */
     function flipCard(event) {
-        var card = event.currentTarget;
-        card.classList.toggle("flipped");
+        const card = event.currentTarget;
+        if (card) card.classList.toggle("flipped");
     }
 
-    /**
-     * Redirect to Thank You page
-     */
     function redirectToThankYou(event) {
         event.preventDefault();
         window.location.href = "thankyou.html";
     }
 
-    /**
-     * Attach event listeners after DOM loads
-     */
     document.addEventListener("DOMContentLoaded", function () {
-        var menuButton = document.querySelector(".hamburger");
-        var bmiButton = document.querySelector("#bmi-calculator button");
-        var contactForm = document.querySelector("#contact form");
-        var exerciseCards = document.querySelectorAll(".exercise-card");
+        const bmiButton = document.querySelector("#bmi-calculator button");
+        const contactForm = document.querySelector("#contact form");
+        const exerciseCards = document.querySelectorAll(".exercise-card");
 
-        if (menuButton) menuButton.addEventListener("click", toggleMenu);
         if (bmiButton) bmiButton.addEventListener("click", calculateBMI);
         if (contactForm) contactForm.addEventListener("submit", redirectToThankYou);
 
-        exerciseCards.forEach(function (card) {
+        exerciseCards.forEach(card => {
             card.addEventListener("click", flipCard);
         });
     });
