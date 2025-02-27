@@ -1,39 +1,80 @@
-// Toggle Slide-Out Menu
-function toggleMenu() {
-    const menu = document.getElementById("side-menu");
-    menu.style.right = menu.style.right === "0px" ? "-260px" : "0px";
-  }
-  
-  // BMI Calculator
-  function calculateBMI() {
-    let weight = parseFloat(document.getElementById("weight").value);
-    let height = parseFloat(document.getElementById("height").value);
-    let result = document.getElementById("bmi-result");
-  
-    if (isNaN(weight) || isNaN(height) || height === 0) {
-      result.innerHTML = "Please enter valid values!";
-      return;
+(function () {
+    "use strict";
+
+    /**
+     * Toggle the hamburger menu visibility
+     */
+    function toggleMenu() {
+        var menu = document.getElementById("menu");
+        if (menu) {
+            menu.classList.toggle("visible");
+        }
     }
-  
-    let bmi = (weight / (height * height)).toFixed(2);
-    let interpretation = bmi < 18.5 ? "Underweight" :
-                          bmi < 24.9 ? "Normal weight" :
-                          bmi < 29.9 ? "Overweight" : "Obese";
-  
-    result.innerHTML = `Your BMI is: <strong>${bmi}</strong> (${interpretation})`;
-  }
-// Toggle menu visibility
-function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
-  }
-  
-  // Flip exercise cards
-  function flipCard(card) {
-    card.classList.toggle("flipped");
-  }
-  function redirectToThankYou(event) {
-    event.preventDefault(); // Zabrání odeslání formuláře na server
-    window.location.href = "thankyou.html"; // Přesměruje na stránku "Thank You"
-  }
-      
+
+    /**
+     * Calculate BMI and display result
+     */
+    function calculateBMI() {
+        var weightInput = document.getElementById("weight");
+        var heightInput = document.getElementById("height");
+        var result = document.getElementById("bmi-result");
+
+        if (!weightInput || !heightInput || !result) return;
+
+        var weight = parseFloat(weightInput.value);
+        var height = parseFloat(heightInput.value);
+
+        if (isNaN(weight) || isNaN(height) || height <= 0) {
+            result.innerHTML = "Please enter valid values!";
+            return;
+        }
+
+        var bmi = (weight / (height * height)).toFixed(2);
+        result.innerHTML = "Your BMI is: <strong>" + bmi + "</strong> (" + getBMICategory(bmi) + ")";
+    }
+
+    /**
+     * Return BMI category based on value
+     */
+    function getBMICategory(bmi) {
+        if (bmi < 18.5) return "Underweight";
+        if (bmi < 24.9) return "Normal weight";
+        if (bmi < 29.9) return "Overweight";
+        return "Obese";
+    }
+
+    /**
+     * Flip exercise card on click
+     */
+    function flipCard(event) {
+        var card = event.currentTarget;
+        card.classList.toggle("flipped");
+    }
+
+    /**
+     * Redirect to Thank You page
+     */
+    function redirectToThankYou(event) {
+        event.preventDefault();
+        window.location.href = "thankyou.html";
+    }
+
+    /**
+     * Attach event listeners after DOM loads
+     */
+    document.addEventListener("DOMContentLoaded", function () {
+        var menuButton = document.querySelector(".hamburger");
+        var bmiButton = document.querySelector("#bmi-calculator button");
+        var contactForm = document.querySelector("#contact form");
+        var exerciseCards = document.querySelectorAll(".exercise-card");
+
+        if (menuButton) menuButton.addEventListener("click", toggleMenu);
+        if (bmiButton) bmiButton.addEventListener("click", calculateBMI);
+        if (contactForm) contactForm.addEventListener("submit", redirectToThankYou);
+
+        exerciseCards.forEach(function (card) {
+            card.addEventListener("click", flipCard);
+        });
+    });
+
+})();
