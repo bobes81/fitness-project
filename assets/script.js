@@ -1,15 +1,23 @@
 (function () {
     "use strict";
 
-    /**
-     * Toggle the hamburger menu visibility
-     */
-    function toggleMenu() {
-        var menu = document.getElementById("menu");
-        if (menu) {
-            menu.classList.toggle("visible");
-        }
-    }
+    document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.getElementById("menu");
+      
+        // Toggle menu visibility on click
+        hamburger.addEventListener("click", () => {
+          menu.classList.toggle("active");
+        });
+      
+        // Close menu when clicking outside
+        document.addEventListener("click", (event) => {
+          if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+            menu.classList.remove("active");
+          }
+        });
+      });
+      
 
     /**
      * Calculate BMI and display result

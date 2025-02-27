@@ -32,38 +32,61 @@ h2 {
 
 /* Hamburger Menu */
 .menu-container {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
+  z-index: 1000;
 }
 
 .hamburger {
   font-size: 30px;
   cursor: pointer;
+  background-color: #1B4D3E;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hamburger:hover {
+  background-color: #fff;
+  color: #1B4D3E;
 }
 
 #menu {
   display: none;
   position: absolute;
-  top: 40px;
+  top: 50px;
   right: 0;
-  background: #1B4D3E;
+  background: white;
   padding: 10px;
   border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #menu ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 #menu ul li {
   padding: 10px;
+  text-align: right;
 }
 
 #menu ul li a {
-  color: white;
+  color: #1B4D3E;
   text-decoration: none;
+  font-weight: bold;
+}
+
+#menu ul li a:hover {
+  color: #29AB87;
+}
+
+/* Show menu when active */
+#menu.active {
+  display: block;
 }
 
 /* BMI Calculator */
