@@ -117,9 +117,13 @@ body {
 
 /* Section Images */
 .section-image {
-  max-width: 100%;
+  max-width: 80%; /* Oprava velikosti obrázků */
+  height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Exercise Cards */
@@ -127,14 +131,14 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .exercise-card {
   background: #1B4D3E;
   color: white;
-  width: 150px;
-  height: 150px;
-  margin: 10px;
+  width: 200px;
+  height: 250px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -143,9 +147,15 @@ body {
   cursor: pointer;
   perspective: 1000px;
   position: relative;
-  transition: transform 0.5s;
+  transition: transform 0.3s ease-in-out;
 }
 
+/* Efekt při najetí myší */
+.exercise-card:hover {
+  transform: scale(1.05);
+}
+
+/* Přední a zadní strana */
 .exercise-card .front,
 .exercise-card .back {
   width: 100%;
@@ -155,14 +165,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
+  transition: transform 0.6s;
+  border-radius: 10px;
 }
 
+/* Design zadní strany */
 .exercise-card .back {
   background: white;
   color: black;
   transform: rotateY(180deg);
+  font-size: 14px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 15px;
+  overflow-y: auto; /* Přidá scrollbar pokud je text dlouhý */
 }
 
+/* Otočení karty */
 .exercise-card.flipped .front {
   transform: rotateY(180deg);
 }
@@ -202,4 +225,62 @@ body {
 
 #contact button:hover {
   background-color: #29AB87;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .welcome-image {
+    max-width: 80%;
+  }
+  
+  .welcome-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .exercise-card {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+}
+/* Footer Styling */
+footer {
+  background-color: #1B4D3E;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 3px solid #29AB87;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #29AB87;
+}
+
+/* Social Media Links */
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #29AB87;
 }
