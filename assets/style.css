@@ -7,14 +7,14 @@ body {
   padding: 0;
 }
 
-/* Background Image */
+/* Background Overlay */
 .background-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('assets/images/Leonardo_Phoenix_10_A_dimly_lit_atmospheric_still_life_featuri_1.png') no-repeat center center/cover;
+  background: url('assets/images/background.png') no-repeat center center/cover;
   opacity: 0.2;
   z-index: -1;
 }
@@ -85,10 +85,6 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-#menu ul li:last-child {
-  border-bottom: none;
-}
-
 #menu ul li a {
   color: white;
   text-decoration: none;
@@ -96,11 +92,6 @@ body {
   display: block;
 }
 
-#menu ul li a:hover {
-  color: #29AB87;
-}
-
-/* Show menu when active */
 #menu.active {
   display: block;
 }
@@ -117,7 +108,7 @@ body {
 
 /* Section Images */
 .section-image {
-  max-width: 80%; /* Oprava velikosti obrázků */
+  max-width: 80%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -150,12 +141,10 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Efekt při najetí myší */
 .exercise-card:hover {
   transform: scale(1.05);
 }
 
-/* Přední a zadní strana */
 .exercise-card .front,
 .exercise-card .back {
   width: 100%;
@@ -170,7 +159,6 @@ body {
   border-radius: 10px;
 }
 
-/* Design zadní strany */
 .exercise-card .back {
   background: white;
   color: black;
@@ -182,10 +170,9 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 15px;
-  overflow-y: auto; /* Přidá scrollbar pokud je text dlouhý */
+  overflow-y: auto;
 }
 
-/* Otočení karty */
 .exercise-card.flipped .front {
   transform: rotateY(180deg);
 }
@@ -227,28 +214,6 @@ body {
   background-color: #29AB87;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .welcome-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .welcome-image {
-    max-width: 80%;
-  }
-  
-  .welcome-text {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .exercise-card {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-  }
-}
 /* Footer Styling */
 footer {
   background-color: #1B4D3E;
@@ -267,20 +232,5 @@ footer a {
 
 footer a:hover {
   color: #29AB87;
-}
-
-/* Social Media Links */
-.social-links {
-  margin-top: 10px;
-}
-
-.social-links a {
-  color: white;
-  font-size: 24px;
-  margin: 0 10px;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #29AB87;
+  text-decoration: underline;
 }
