@@ -6,7 +6,7 @@ Welcome to Ivan's Fitness, a website dedicated to helping individuals achieve th
 
 This project was created to inspire and educate people about the benefits of a healthy lifestyle through structured exercise routines, balanced nutrition, and motivational transformations. The website also features before and after transformations, showcasing real-life results achieved through dedication and consistency.
 
-![Introduction](assets/images/introduction.png)
+![Introduction](assets/images/Leonardo_Phoenix_10_A_fit_and_determined_Ivan_with_a_strong_ja_2.png)
 
 ## Navigation Menu
 
