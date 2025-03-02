@@ -7,14 +7,14 @@ body {
   padding: 0;
 }
 
-/* Background Overlay */
+/* Background Image */
 .background-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('assets/images/background.png') no-repeat center center/cover;
+  background: url('/assets/images/Leonardo_Phoenix_10_A_dimly_lit_atmospheric_still_life_featuri_1.png') no-repeat center center/cover;
   opacity: 0.2;
   z-index: -1;
 }
@@ -34,13 +34,13 @@ body {
 
 /* Welcome Image */
 .welcome-image {
-  max-width: 40%;
+  max-width: 30%;
   border-radius: 10px;
 }
 
 /* Welcome Text */
 .welcome-text {
-  max-width: 50%;
+  max-width: 60%;
   text-align: left;
 }
 
@@ -85,6 +85,10 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+#menu ul li:last-child {
+  border-bottom: none;
+}
+
 #menu ul li a {
   color: white;
   text-decoration: none;
@@ -92,23 +96,29 @@ body {
   display: block;
 }
 
+#menu ul li a:hover {
+  color: #29AB87;
+}
+
+/* Show menu when active */
 #menu.active {
   display: block;
 }
 
 /* Section Styling */
 .box {
-  background: white;
-  padding: 40px;
+  max-width: 1000px;
   margin: 40px auto;
-  max-width: 800px;
+  padding: 20px;
+  background: white;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 /* Section Images */
 .section-image {
-  max-width: 80%;
+  max-width: 60%; /* Zmenšení velikosti obrázků */
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -136,15 +146,18 @@ body {
   justify-content: center;
   border-radius: 10px;
   cursor: pointer;
-  perspective: 1000px;
   position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
   transition: transform 0.3s ease-in-out;
 }
 
+/* Efekt při najetí myší */
 .exercise-card:hover {
   transform: scale(1.05);
 }
 
+/* Přední a zadní strana */
 .exercise-card .front,
 .exercise-card .back {
   width: 100%;
@@ -159,6 +172,7 @@ body {
   border-radius: 10px;
 }
 
+/* Design zadní strany */
 .exercise-card .back {
   background: white;
   color: black;
@@ -170,15 +184,67 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 15px;
-  overflow-y: auto;
+  overflow-y: auto; /* Přidá scrollbar pokud je text dlouhý */
 }
 
+/* Otočení karty */
 .exercise-card.flipped .front {
   transform: rotateY(180deg);
 }
 
 .exercise-card.flipped .back {
   transform: rotateY(0deg);
+}
+
+/* Otočné karty na PC */
+@media (min-width: 768px) {
+  .exercise-card {
+    perspective: 1000px;
+  }
+
+  .exercise-card .front,
+  .exercise-card .back {
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .exercise-card .back {
+    transform: rotateY(180deg);
+  }
+
+  .exercise-card.flipped .front {
+    transform: rotateY(180deg);
+  }
+
+  .exercise-card.flipped .back {
+    transform: rotateY(0deg);
+  }
+}
+
+/* Zjednodušené karty na mobilu - obsah se zobrazí rovnou */
+@media (max-width: 768px) {
+  .exercise-card {
+    background: white;
+    border: 2px solid #29AB87; /* Zelený rámeček pro mobilní zařízení */
+    margin-bottom: 20px;
+  }
+
+  .exercise-card .front {
+    display: none;
+  }
+
+  .exercise-card .back {
+    position: relative;
+    transform: none;
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Zvýraznění karty */
+.exercise-card.highlight {
+  background-color: #FFD700; /* Žlutá barva pro zvýrazněnou kartu */
+  color: black;
 }
 
 /* Contact Form */
@@ -214,7 +280,31 @@ body {
   background-color: #29AB87;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .welcome-image {
+    max-width: 80%;
+  }
+  
+  .welcome-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .exercise-card {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+}
 /* Footer Styling */
+
+/* Footer styling */
 footer {
   background-color: #1B4D3E;
   color: white;
@@ -224,13 +314,34 @@ footer {
   border-top: 3px solid #29AB87;
 }
 
+/* Styling for email link */
 footer a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* Hover effect for email */
 footer a:hover {
   color: #29AB87;
   text-decoration: underline;
+}
+
+/* Stylování sociálních ikon */
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover efekt */
+.social-links a:hover {
+  color: #29AB87;
+  transform: scale(1.2);
 }
