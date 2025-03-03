@@ -7,6 +7,7 @@
         const exerciseCards = document.querySelectorAll(".exercise-card");
         const bmiButton = document.querySelector("#bmi-calculator button");
         const contactForm = document.querySelector("#contact form");
+        const calorieButton = document.querySelector("#calorieForm button"); // Přidání tlačítka kalorické kalkulačky
 
         // Toggle hamburger menu
         if (hamburger && menu) {
@@ -21,13 +22,12 @@
             });
         }
 
-        // Flip exercise card and close previously opened one
+        // Flip exercise card
         function flipCard(event) {
             const card = event.currentTarget;
             card.classList.toggle('flipped');
         }
 
-        // Přidejte event listener pro všechny karty
         exerciseCards.forEach(card => {
             card.addEventListener('click', flipCard);
         });
@@ -36,8 +36,8 @@
          * Calculate BMI and display result with category highlighting
          */
         function calculateBMI() {
-            const weightInput = document.getElementById("weight");
-            const heightInput = document.getElementById("height");
+            const weightInput = document.getElementById("bmi-weight");
+            const heightInput = document.getElementById("bmi-height");
             const result = document.getElementById("bmi-result");
 
             if (!weightInput || !heightInput || !result) return;
@@ -86,13 +86,51 @@
             }
         }
 
+        /**
+         * Calculate daily calorie needs
+         */
+        function calculateCalories() {
+            console.log("Calculating calories...");
+
+            const gender = document.getElementById("calorie-gender").value;
+            const weight = parseFloat(document.getElementById("calorie-weight").value);
+            const height = parseFloat(document.getElementById("calorie-height").value);
+            const age = parseInt(document.getElementById("calorie-age").value);
+            const activity = parseFloat(document.getElementById("calorie-activity").value);
+            const resultElement = document.getElementById("calorie-result");
+
+            if (isNaN(weight) || isNaN(height) || isNaN(age)) {
+                resultElement.textContent = "⚠️ Please fill in all fields correctly!";
+                return;
+            }
+
+            // Calculate BMR based on gender
+            let BMR;
+            if (gender === "male") {
+                BMR = 88.36 + (13.4 * weight) + (4.8 * height) - (5.7 * age);
+            } else {
+                BMR = 447.6 + (9.2 * weight) + (3.1 * height) - (4.3 * age);
+            }
+
+            // Calculate total daily calorie requirement
+            const totalCalories = BMR * activity;
+
+            // Display result
+            resultElement.textContent = `🔥 Your daily calorie requirement: ${Math.round(totalCalories)} kcal`;
+        }
+
+        /**
+         * Redirect to Thank You page
+         */
         function redirectToThankYou(event) {
             event.preventDefault();
             window.location.href = "thankyou.html";
         }
 
+        // Event listeners
         if (bmiButton) bmiButton.addEventListener("click", calculateBMI);
         if (contactForm) contactForm.addEventListener("submit", redirectToThankYou);
+        if (calorieButton) calorieButton.addEventListener("click", calculateCalories); // Přidání event listeneru na kalorickou kalkulačku
     });
 
 })();

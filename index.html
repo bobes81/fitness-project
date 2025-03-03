@@ -6,6 +6,16 @@
   <title>Ivan's Fitness</title>
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/script.js" defer></script>
+  <meta property="og:title" content="Ivan's Fitness">
+  <meta property="og:description" content="Optimize your fitness with a BMI and Caloric Calculator.">
+  <meta property="og:image" content="assets/images/ivan-profile.png">
+  <meta property="og:url" content="https://yourwebsite.com">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 
@@ -18,6 +28,7 @@
         <li><a href="#inspiration">Get Inspired</a></li>
         <li><a href="#bmi-calculator">BMI Calculator</a></li>
         <li><a href="#exercises">Exercises</a></li>
+        <li><a href="#caloric-calculator">Caloric Calculator</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -30,7 +41,7 @@
   <header id="welcome" class="box">
     <div class="welcome-container">
       <img src="assets/images/ivan-profile.png" 
-           alt="Ivan Fitness" class="welcome-image">
+           alt="Ivan Fitness" class="welcome-image" width="300" height="300" loading="lazy">
       <div class="welcome-text">
         <h1>Welcome to Ivan's Fitness</h1>
         <p>Achieve the best results with a workout tailored to your BMI.</p>
@@ -43,7 +54,7 @@
   <!-- Inspiration Section -->
   <section id="inspiration" class="box">
     <img src="assets/images/muscular-man.png" 
-         alt="Get Inspired" class="section-image">
+         alt="Get Inspired" class="section-image" width="600" height="400" loading="lazy">
     <h2>Get Inspired – Take the First Step</h2>
     <p>Hi, I'm Ivan! I was born in the Czech Republic and have been living in the UK for over eight years. Fitness has become a fundamental part of my life, and recently, I’ve discovered a passion for programming as well.</p>
     <p>I started my fitness journey six years ago, so I know firsthand how challenging the beginning can be. But trust me, as time goes by, you’ll see your body transform, and you’ll feel much better in your "new body." I've restarted my journey multiple times because the biggest challenge isn’t the weights—it’s overcoming your own doubts.</p>
@@ -54,12 +65,12 @@
   <!-- BMI Calculator -->
   <section id="bmi-calculator" class="box">
     <img src="assets/images/bmi-calculator.png" 
-         alt="BMI Calculator" class="section-image">
+         alt="BMI Calculator" class="section-image" width="600" height="400" loading="lazy">
     <h2>BMI Calculator</h2>
-    <label for="weight">Weight (kg):</label>
-    <input type="number" id="weight" placeholder="Enter your weight">
-    <label for="height">Height (cm):</label>
-    <input type="number" id="height" placeholder="Enter your height">
+    <label for="bmi-weight">Weight (kg):</label>
+    <input type="number" id="bmi-weight" placeholder="Enter your weight">
+    <label for="bmi-height">Height (cm):</label>
+    <input type="number" id="bmi-height" placeholder="Enter your height">
     <button onclick="calculateBMI()">Calculate</button>
     <button id="resetBtn">Reset</button>
     <p id="bmi-result"></p>
@@ -68,7 +79,7 @@
   <!-- Exercises Section -->
   <section id="exercises" class="box">
     <img src="assets/images/group-workout.png" 
-         alt="Exercises" class="section-image">
+         alt="Exercises" class="section-image" width="600" height="400" loading="lazy">
     <h2>Exercises for You</h2>
     <div class="exercise-grid">
       <div class="exercise-card" onclick="flipCard(this)">
@@ -157,8 +168,8 @@
   <section id="power-of-change" class="box">
     <h2>The Power of Change</h2>
     <div class="before-after-container">
-      <img src="assets/images/transformation-1.png" alt="Before" class="before-after-image">
-      <img src="assets/images/transformation-2.png" alt="After" class="before-after-image">
+      <img src="assets/images/transformation-1.png" alt="Before" class="before-after-image" width="400" height="400" loading="lazy">
+      <img src="assets/images/transformation-2.png" alt="After" class="before-after-image" width="400" height="400" loading="lazy">
     </div>
     <h3>Why Living a Healthy Lifestyle is Essential</h3>
     <p>Living a healthy lifestyle is one of the best choices you can make for yourself. It not only improves your physical well-being but also enhances your mental and emotional health. A balanced diet, regular exercise, and proper hydration can help prevent diseases, boost energy levels, and improve overall quality of life.</p>
@@ -168,9 +179,45 @@
     <p>Incorporating these habits into your daily routine will not only make you feel better physically but also increase confidence and self-discipline. A healthy lifestyle isn’t just about fitness—it’s about creating a sustainable, balanced life that allows you to perform at your best in everything you do. Start today and invest in your future self! 💪🔥</p>
   </section>
 
+  <!-- Caloric Calculator Section -->
+  <section id="caloric-calculator" class="box">
+    <img src="assets/images/caloric-calculator.png" alt="Caloric Calculator" class="section-image" width="600" height="400" loading="lazy">
+    <h2>Caloric Calculator</h2>
+    <form id="calorieForm">
+        <label for="calorie-gender">Gender:</label>
+        <select id="calorie-gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="calorie-weight">Weight (kg):</label>
+        <input type="number" id="calorie-weight" required>
+
+        <label for="calorie-height">Height (cm):</label>
+        <input type="number" id="calorie-height" required>
+
+        <label for="calorie-age">Age:</label>
+        <input type="number" id="calorie-age" required>
+
+        <label for="calorie-activity">Activity Level:</label>
+        <select id="calorie-activity">
+            <option value="1.2">Sedentary lifestyle (no exercise)</option>
+            <option value="1.375">Light activity (1-3 days/week)</option>
+            <option value="1.55">Moderate activity (3-5 days/week)</option>
+            <option value="1.725">Highly active (6-7 days/week)</option>
+            <option value="1.9">Extremely active (athletes)</option>
+        </select>
+
+        <button type="button" onclick="calculateCalories()">Calculate</button>
+    </form>
+
+    <h2>Your daily calorie requirement:</h2>
+    <p id="calorie-result">---</p>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="box">
-    <img src="assets/images/contact-card.png" alt="Contact Me" class="section-image">
+    <img src="assets/images/contact-card.png" alt="Contact Me" class="section-image" width="600" height="400" loading="lazy">
     <h2>Contact Me</h2>
     <form onsubmit="redirectToThankYou(event)">
       <label for="name">Name:</label>
