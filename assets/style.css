@@ -449,3 +449,41 @@ footer a:hover {
   color: #29AB87;
   transform: scale(1.2);
 }
+footer {
+  background-color: #1B4D3E;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 3px solid #29AB87;
+  border: 2px solid #29AB87;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #29AB87;
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #29AB87;
+  transform: scale(1.2);
+}
