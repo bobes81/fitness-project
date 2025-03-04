@@ -1,179 +1,171 @@
-Ivan's Fitness - Your Path to a Healthier Life
 
-<b>Introduction 🏋️‍♂️</b>
+![Introduction](assets/images/welcome.png)
+# Ivan's Fitness - Your Path to a Healthier Life
 
-Welcome to Ivan's Fitness, a website designed to help individuals achieve their fitness goals, build strength, and adopt a healthier lifestyle. Whether your goal is weight loss, muscle gain, or overall fitness improvement, this platform provides the right guidance, structured workout plans, and valuable nutrition tips.
+## Introduction 🏋️‍♂️
+Welcome to **Ivan's Fitness**, a web application designed to help individuals achieve their fitness goals through structured workout plans, interactive calculators, and motivational content. This platform provides users with essential tools such as a **BMI Calculator** and a **Caloric Calculator**, helping them tailor their fitness journey based on personalized data.
 
-This project was created to inspire and educate people about the importance of fitness and well-being. Through a combination of custom workout programs, transformation stories, and interactive tools, users will have everything they need to start their fitness journey.
-
-![Introduction](assets/images/introduction.png)
-
----
-
-<b>🔍 Navigation Menu</b>
-
-The website includes an intuitive and user-friendly navigation menu, making it easy for users to explore different sections. The navigation bar consists of:
-
-- Home – The starting point with an overview of the site.  
-- BMI Calculator – A tool to assess body composition and suggest workout plans.  
-- Workout Plans – Detailed exercise programs tailored to different fitness levels.  
-- Transformations – Real-life before-and-after transformations to keep you motivated.  
-- Contact – A section where users can reach out for personalized fitness guidance.  
-
-The navigation menu is fixed at the top, ensuring seamless browsing and easy access across all devices.
-
-![Navigation Menu](assets/images/group-workout.png)
+This project aims to educate and inspire users to maintain a **healthy lifestyle**, offering custom workout plans and nutritional guidance for different body types. By integrating interactive elements, real-life transformation stories, and user-friendly features, **Ivan’s Fitness** is more than just a fitness guide – it’s a step towards a **better you**.
 
 ---
 
-<b>🔥 Transformation Section</b>
+## About the Project 📌
+![About the Project](assets/images/ivan-profile.png)
+The **Ivan’s Fitness** project was built to address the common challenges people face in achieving fitness goals. It provides **personalized workout plans** based on BMI categories and caloric needs, making it easier for users to understand how to train and eat correctly. The website includes a **BMI Calculator**, a **Caloric Calculator**, and a dedicated section for workout plans tailored to different fitness levels.
 
-One of the most powerful sections of Ivan’s Fitness is the Transformation Gallery. Seeing real fitness journeys can be a huge source of motivation for anyone starting out.
+Key objectives of the project:
+- Offer **interactive fitness tools** to help users make informed health decisions.
+- Provide **structured workout plans** based on **BMI results**.
+- Ensure **responsive design**, making it accessible across all devices.
+- Inspire users with **real-life transformations** and practical fitness advice.
+- Integrate **email confirmation** after form submission for better user engagement.
 
-<b>Why This Section Matters?</b>
-- Visual motivation – Seeing results from real people inspires commitment.  
-- Proof of success – Showcasing transformations builds trust in the fitness programs.  
-- Encourages consistency – Demonstrates that results come from dedication and effort.  
-
-<b>What’s Included?</b>
-- Before & After Photos – Real transformations achieved through structured plans.  
-- Personal Stories – Testimonials from individuals who followed Ivan’s guidance.  
-- Expert Tips – Advice on how to stay committed and overcome fitness obstacles.  
-
-![Transformation Section](assets/images/transformation-1.png)
-![Transformation Section](assets/images/transformation-2.png)
+This project was developed using **HTML, CSS, and JavaScript**, deployed via **GitHub Pages**, and tested for **performance, accessibility, and cross-browser compatibility**.
 
 ---
 
-<b>📊 BMI Calculator</b>
+## Navigation Menu 🔍
+![Navigation Menu](assets/images/menu-github.jepg)
+The website includes an **intuitive and responsive navigation menu** that allows users to explore various sections easily. The navigation bar includes:
 
-Understanding your Body Mass Index (BMI) is a crucial step in any fitness journey. Our BMI Calculator helps users identify their fitness category and provides custom workout recommendations based on their results.
+- **Home** – The main landing page with an overview of the website.
+- **BMI Calculator** – A tool to assess body composition and suggest workout plans.
+- **Exercises** – A section with exercise recommendations based on BMI.
+- **Caloric Calculator** – A tool to calculate daily caloric intake requirements.
+- **Contact** – A section where users can reach out for personalized fitness guidance.
 
-<b>BMI Categories:</b>
-- Underweight – A focus on gaining muscle through strength training.  
-- Normal Weight – Balanced workouts to maintain fitness and improve endurance.  
-- Overweight – Fat-burning programs and nutrition strategies for sustainable weight loss.  
-- Obese – A structured approach to gradual weight loss and overall health improvement.  
-
-Once users get their BMI results, they are directed to customized workout plans tailored to their fitness level.
-
-![BMI Calculator](assets/images/bmi-calculator.png)
+The navigation bar remains **fixed at the top**, ensuring easy access to all sections across devices.
 
 ---
 
-<b>🏋️‍♂️ Workout Plans Section</b>
+## Exercises for You 🏋️‍♀️
+![Exercises for You](assets/images/group-workout.png)
+One of the most unique features of the **Ivan’s Fitness** platform is the **interactive exercise recommendation system**. After users calculate their BMI, the **appropriate exercise category** is **highlighted in yellow**, making it clear which training program suits their body type.
 
-The Workout Plans section provides structured training programs designed for various fitness levels and goals. Each plan includes:
+### How It Works:
+1. **User inputs height and weight** into the **BMI Calculator**.
+2. **The system calculates BMI** and categorizes the user.
+3. **The corresponding workout card turns yellow**, visually guiding users to their recommended exercise plan.
+4. The user can explore detailed exercise plans and fitness tips tailored to their **BMI category**.
 
-- Types of exercises – Strength training, cardio, HIIT, and flexibility workouts.  
-- Training frequency – Recommended number of workouts per week.  
-- Nutrition guidance – Tips for a balanced diet that complements workouts.  
-- Recovery tips – The importance of sleep, hydration, and rest days.  
+By offering **clear visual guidance**, this feature enhances user experience and ensures **personalized fitness recommendations**.
 
-Workouts are designed for beginners, intermediates, and advanced individuals, ensuring that everyone finds a suitable plan.
+---
+![Caloric Calculator](assets/images/caloric-calculator.png)
+## Caloric Calculator 🔥
+A key aspect of any **fitness journey** is managing **caloric intake**. The **Caloric Calculator** helps users determine their **daily energy requirements** based on:
+- **Gender** (Male/Female)
+- **Weight** (kg)
+- **Height** (cm)
+- **Age** (years)
+- **Activity level** (sedentary to highly active)
 
-![Workout Plans](assets/images/weights.png)
+Once users input their details, the calculator provides an estimate of **daily caloric needs**, helping them understand how much they should eat to maintain, gain, or lose weight.
 
 ---
 
-<b>📩 Contact Section</b>
+## Favicon 🖼️
+A **custom favicon** was implemented to enhance branding and improve user experience. The favicon:
+- Helps users quickly identify the website in browser tabs.
+- Maintains **visual consistency** with the website’s theme.
+- Improves the overall **professionalism** of the project.
 
-Need personalized fitness advice or have any inquiries? The Contact Form allows users to get in touch easily.
-
-<b>Contact Form Fields:</b>
-- Name – Identify yourself for personalized responses.  
-- Email Address – Required for follow-up communication.  
-- Message – Questions, inquiries, or fitness guidance requests.  
-
-<b>Confirmation Message:</b>
-"Thank you for reaching out! I will get back to you within 2–4 days. For urgent requests, please contact me directly via email."
-
-This ensures smooth communication and professional support for users.
-
-![Contact Section](assets/images/contact-card.png)
+The favicon is stored in the `assets/favicon/` directory and applied in the HTML `<head>` section.
 
 ---
 
-<b>📌 Footer Section</b>
+## 404 Page 🚫
+A **custom 404 page** was created to handle cases where users access a **non-existent page**. This page:
+- Displays a friendly **error message**.
+- Provides a **redirect link** back to the homepage.
+- Ensures a **better user experience** by preventing confusion.
 
-The footer contains essential links and contact details, including:
+The `404.html` file is included in the root directory for seamless integration.
 
-- Copyright Notice – "© 2024 Ivan's Fitness. All Rights Reserved."  
-- Email Contact – Direct link to the author’s email.  
-- Social Media – Icons linking to Instagram, Facebook, and YouTube for more fitness inspiration.  
+---
+![Contact Form](assets/images/contact-card.png)
+## Contact Form 📩
+The **Contact Form** allows users to send inquiries or request personalized fitness guidance.
 
-The footer maintains a clean and minimalistic design, ensuring a consistent branding experience.
+### Features:
+- **User Inputs**: Name, Email, and Message.
+- **Form Validation**: Ensures all fields are correctly filled before submission.
+- **Email Confirmation**: Users receive an **automatic confirmation email** after submission.
+- **Success Message**: After sending, users see a notification: _"Your email has been sent successfully!"_
 
-![Footer Section](assets/images/contact-card.png)
+This ensures smooth communication and enhances **user engagement**.
+
+---
+![Thank You Page](assets/images/thankyou.jpeg)## Thank You Page 🎉
+After submitting the **contact form**, users are redirected to a **Thank You page**, confirming that their message has been received. This page:
+- Acknowledges the user’s submission.
+- Encourages further engagement with the website.
+- Provides additional contact details for urgent inquiries.
 
 ---
 
-<b>🏆 Existing Features</b>
-
-- Responsive Design – Fully optimized for desktops, tablets, and mobile devices.  
-- BMI Calculator – An interactive tool for assessing fitness level.  
-- Workout Plans – Structured routines for all fitness goals.  
-- Transformation Gallery – Inspiring before-and-after images.  
-- Contact Form – A simple and effective communication tool.  
-- Fixed Navigation Bar – Ensures easy access to all sections.  
-- Custom 404 Page – Keeps the user experience smooth.  
-- Social Media Integration – Direct access to Ivan’s fitness community.  
+## Existing Features ✅
+- **Responsive Design** for all devices.
+- **BMI Calculator** for fitness assessment.
+- **Interactive Exercise Section** with highlighted recommendations.
+- **Caloric Calculator** for diet planning.
+- **Email Confirmation System** for contact form submissions.
+- **404 Custom Page** for broken links.
 
 ---
 
-<b>🚀 Planned Features</b>
+## Design 🎨
+The **design philosophy** of Ivan's Fitness focuses on **clarity, motivation, and ease of use**. The color scheme consists of:
+- **Green (#4CAF50)** for a calming and healthy look.
+- **White (#FFFFFF)** for clean and clear content sections.
+- **Black (#000000)** for strong contrasts and easy readability.
 
-- Progress Tracker – Allows users to log workouts and track progress.  
-- Meal Plans – Personalized nutrition recommendations based on BMI.  
-- Video Workouts – Guided fitness sessions for home and gym training.  
-- Dark Mode Option – A customizable interface for different user preferences.  
-- Community Challenges – Fitness competitions and progress sharing.  
-
----
-
-<b>🛠️ Technologies Used</b>
-
-- HTML5 – Structural foundation of the website.  
-- CSS3 – Styling and responsive layout.  
-- JavaScript – Interactivity and user engagement.  
-- Git & GitHub – Version control and project hosting.  
-- Favicon – Custom fitness-themed icon for branding.  
+All elements were designed to maintain a **modern, visually appealing interface**.
 
 ---
 
-<b>✅ Testing & Validation</b>
-
-The website underwent extensive testing to ensure optimal performance across different environments.
-
-- Cross-browser compatibility – Works on Chrome, Firefox, Safari, and Edge.  
-- Responsive design tests – Ensures seamless experience across devices.  
-- Form validation – The Contact Form has been tested for proper functionality.  
-- Performance optimization – Fast loading times with optimized assets.  
-- W3C Validation – Ensures compliance with web development best practices.  
+## Technologies Used 💻
+- **HTML5** – Structural foundation.
+- **CSS3** – Styling and responsive design.
+- **JavaScript** – Interactivity and logic.
+- **EmailJS** – Contact form automation.
+- **Git & GitHub** – Version control and deployment.
 
 ---
 
-<b>🌍 Deployment</b>
-
-The website is hosted on GitHub Pages and accessible from any device.
-
-<b>Deployment Steps:</b>
-1. Pushed code to a GitHub repository.  
-2. Enabled GitHub Pages in repository settings.  
-3. Selected the main branch for deployment.  
-4. Published the website using the provided GitHub Pages URL.  
+## Testing & Validation 🛠️
+All core functions underwent extensive **testing**:
+- ✅ **HTML & CSS Validation** via W3C tools.
+- ✅ **JavaScript Debugging** using Developer Console.
+- ✅ **Lighthouse Audit** for Performance, Accessibility, SEO.
+- ✅ **Cross-Browser Compatibility** tests.
 
 ---
 
-<b>👏 Acknowledgments</b>
+## Deployment 🚀
+The project was **deployed on GitHub Pages**. Deployment steps:
+1. **Code pushed to GitHub Repository**.
+2. **GitHub Pages enabled** in repository settings.
+3. **Live link generated for public access**.
 
-This project was developed as part of Ivan's Fitness, inspired by real-life fitness transformations.
-
-<b>Special thanks to:</b>
-- The fitness community for inspiration and shared knowledge.  
-- The Code Institute community for technical guidance.  
-- Friends and family for ongoing support and motivation.  
+The site is now accessible at: [Ivan's Fitness GitHub Pages](https://bobes81.github.io/fitness-project/)
 
 ---
 
-🚀 Are you ready to transform your body and mind? Start your journey today with Ivan's Fitness! 💪🔥
+## Version Control 🗃️
+- The project was developed using **VS Code**.
+- Version control managed via **Git & GitHub**.
+- Changes tracked using **meaningful commit messages**.
+
+---
+
+## Credits 🙌
+- **Development:** Ivan Kimpl
+- **Mentorship:** Gareth Mc Girr
+- **Resources:** Code Institute, W3C Validators, Mozilla Dev Docs
+- **AI-Generated Images**: All images used in this project were created using AI tools to ensure originality and avoid copyright concerns.
+- **ChatGPT Assistance**: This project also benefited from ChatGPT’s guidance, which provided support in structuring content, debugging, and improving the overall user experience.
+
+
+
+
