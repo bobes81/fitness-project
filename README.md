@@ -112,7 +112,8 @@ One of the most **unique features** of the **Ivan’s Fitness** platform is the 
 
 By following the **recommended plan**, users can see **better results** and stay committed to their **fitness journey** without feeling overwhelmed.
 
-<img src="assets/images/group-workout.png" width="350">
+---
+
 <img src="assets/images/caloric-calculator.jpeg" width="300">
 
 ## Caloric Calculator 🔥
@@ -127,7 +128,7 @@ A key aspect of any **fitness journey** is managing **caloric intake**. The **Ca
 Once users input their details, the calculator provides an estimate of **daily caloric needs**, helping them understand how much they should eat to maintain, gain, or lose weight.
 
 ---
-
+<img src="assets/images/favicon.jpeg" width="250">
 ## Favicon 🖼️
 A **custom favicon** was implemented to enhance branding and improve user experience. The favicon:
 - Helps users quickly identify the website in browser tabs.
@@ -137,7 +138,7 @@ A **custom favicon** was implemented to enhance branding and improve user experi
 The favicon is stored in the `assets/favicon/` directory and applied in the HTML `<head>` section.
 
 ---
-
+<img src="assets/images/favicon.jpeg" width="250">
 ## 404 Page 🚫
 A **custom 404 page** was created to handle cases where users access a **non-existent page**. This page:
 - Displays a friendly **error message**.
@@ -148,7 +149,7 @@ The `404.html` file is included in the root directory for seamless integration.
 
 ---
 
-<img src="assets/images/contact-card.png" width="250">
+<img src="assets/images/contact-card.png" width="300">
 
 ## Contact Form 📩
 
@@ -174,7 +175,7 @@ After submitting the **contact form**, users are redirected to a **Thank You pag
 - Provides additional contact details for urgent inquiries.
 
 ---
-
+<img src="assets/images/credits.jpeg" width="300">
 ## Credits 🙌
 - **Development:** Ivan Kimpl
 - **Mentorship:** Gareth Mc Girr
