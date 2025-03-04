@@ -1,5 +1,5 @@
 
-![Introduction](assets/images/welcome.png)
+<img src="assets/images/welcome.png" width="350">
 # Ivan's Fitness - Your Path to a Healthier Life
 
 ## Introduction 🏋️‍♂️
@@ -10,7 +10,7 @@ This project aims to educate and inspire users to maintain a **healthy lifestyle
 ---
 
 ## About the Project 📌
-![About the Project](assets/images/ivan-profile.png)
+<img src="assets/images/ivan-profile.png" width="300">
 The **Ivan’s Fitness** project was built to address the common challenges people face in achieving fitness goals. It provides **personalized workout plans** based on BMI categories and caloric needs, making it easier for users to understand how to train and eat correctly. The website includes a **BMI Calculator**, a **Caloric Calculator**, and a dedicated section for workout plans tailored to different fitness levels.
 
 Key objectives of the project:
@@ -25,7 +25,7 @@ This project was developed using **HTML, CSS, and JavaScript**, deployed via **G
 ---
 
 ## Navigation Menu 🔍
-![Navigation Menu](assets/images/menu-github.jepg)
+<img src="assets/images/menu-github.jpeg" width="300">
 The website includes an **intuitive and responsive navigation menu** that allows users to explore various sections easily. The navigation bar includes:
 
 - **Home** – The main landing page with an overview of the website.
@@ -39,7 +39,7 @@ The navigation bar remains **fixed at the top**, ensuring easy access to all sec
 ---
 
 ## Exercises for You 🏋️‍♀️
-![Exercises for You](assets/images/group-workout.png)
+<img src="assets/images/group-workout.png" width="350">
 One of the most unique features of the **Ivan’s Fitness** platform is the **interactive exercise recommendation system**. After users calculate their BMI, the **appropriate exercise category** is **highlighted in yellow**, making it clear which training program suits their body type.
 
 ### How It Works:
@@ -51,7 +51,7 @@ One of the most unique features of the **Ivan’s Fitness** platform is the **in
 By offering **clear visual guidance**, this feature enhances user experience and ensures **personalized fitness recommendations**.
 
 ---
-![Caloric Calculator](assets/images/caloric-calculator.png)
+<img src="assets/images/caloric-calculator.jpeg" width="300">
 ## Caloric Calculator 🔥
 A key aspect of any **fitness journey** is managing **caloric intake**. The **Caloric Calculator** helps users determine their **daily energy requirements** based on:
 - **Gender** (Male/Female)
@@ -83,7 +83,7 @@ A **custom 404 page** was created to handle cases where users access a **non-exi
 The `404.html` file is included in the root directory for seamless integration.
 
 ---
-![Contact Form](assets/images/contact-card.png)
+<img src="assets/images/contact-card.png" width="250">
 ## Contact Form 📩
 The **Contact Form** allows users to send inquiries or request personalized fitness guidance.
 
@@ -96,7 +96,8 @@ The **Contact Form** allows users to send inquiries or request personalized fitn
 This ensures smooth communication and enhances **user engagement**.
 
 ---
-![Thank You Page](assets/images/thankyou.jpeg)## Thank You Page 🎉
+<img src="assets/images/thankyou.jpg" width="300">
+## Thank You Page 🎉
 After submitting the **contact form**, users are redirected to a **Thank You page**, confirming that their message has been received. This page:
 - Acknowledges the user’s submission.
 - Encourages further engagement with the website.
