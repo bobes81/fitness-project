@@ -236,20 +236,21 @@
   <div id="calorie-result"></div>
 </section>
 
-  <!-- Contact Section -->
-  <form id="contactForm" method="post" onsubmit="redirectToThankYou(event)" action="#">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="from_name" required>
-  
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="reply_to" required>
-  
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
-  
-    <button type="submit">Send</button>
+ 
+ <!-- Contact Section -->
+<section id="contact" class="box">
+  <img src="assets/images/contact-card.png" alt="Contact Me" class="section-image" width="600" height="400" loading="lazy">
+  <h2>Contact Me</h2>
+  <form id="contactForm" onsubmit="redirectToThankYou(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="from_name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="reply_to" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Send</button>
   </form>
-  
+</section>
 
   <footer>
     <p>&copy; 2024 Ivan's Fitness</p>
@@ -273,4 +274,4 @@
      emailjs.init("3qAMI9LF7yenmzmPT");
   </script>
 </body>
-</html>
+</html> 

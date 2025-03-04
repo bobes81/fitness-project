@@ -46,7 +46,7 @@
         }
 
         // Attach event listener for Contact Form submission
-        const contactForm = document.querySelector("#contactForm");
+        const contactForm = document.querySelector("#contact form");
         if (contactForm) {
             contactForm.addEventListener("submit", redirectToThankYou);
         }
@@ -153,15 +153,11 @@
     function redirectToThankYou(event) {
         event.preventDefault(); // Zabrání reloadu stránky
 
-        console.log("Odesílám data:", new FormData(event.target)); // DEBUG
-
         emailjs.sendForm("service_deaup5m", "template_gginm2c", event.target)
-            .then(function(response) {
-                console.log("Email úspěšně odeslán", response); // DEBUG
+            .then(function() {
                 alert("Email byl úspěšně odeslán!");
                 window.location.href = "thankyou.html"; // Přesměrování po odeslání
             }, function(error) {
-                console.error("Chyba při odesílání emailu:", error); // DEBUG
                 alert("Chyba při odesílání emailu: " + error.text);
             });
     }
@@ -172,7 +168,7 @@
     document.addEventListener("DOMContentLoaded", function () {
         const bmiButton = document.querySelector("#bmi-calculate-btn");
         const calorieButton = document.querySelector("#caloric-calculator button");
-        const contactForm = document.querySelector("#contactForm");
+        const contactForm = document.querySelector("#contact form");
 
         if (bmiButton) bmiButton.addEventListener("click", calculateBMI);
         if (calorieButton) calorieButton.addEventListener("click", calculateCalories);
