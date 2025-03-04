@@ -40,21 +40,79 @@ The navigation bar remains **fixed at the top**, ensuring easy access to all sec
 
 ---
 
-## Exercises for You 🏋️‍♀️
-<img src="assets/images/group-workout.png" width="350">
+## BMI Calculator ⚖️
 
-One of the most unique features of the **Ivan’s Fitness** platform is the **interactive exercise recommendation system**. After users calculate their BMI, the **appropriate exercise category** is **highlighted in yellow**, making it clear which training program suits their body type.
+<img src="assets/images/bmi-calculator.png" width="300">
 
-### How It Works:
-1. **User inputs height and weight** into the **BMI Calculator**.
-2. **The system calculates BMI** and categorizes the user.
-3. **The corresponding workout card turns yellow**, visually guiding users to their recommended exercise plan.
-4. The user can explore detailed exercise plans and fitness tips tailored to their **BMI category**.
 
-By offering **clear visual guidance**, this feature enhances user experience and ensures **personalized fitness recommendations**.
+
+The **BMI Calculator** is a fundamental tool on the **Ivan’s Fitness** platform, helping users assess their **body composition** and determine their **fitness category**. By entering **height and weight**, users receive an instant **Body Mass Index (BMI) score**, which categorizes them into one of several groups:
+
+
+
+✅ **Underweight** – Focus on **muscle gain** and **nutrient-rich diet**.  
+
+✅ **Normal Weight** – Maintain a **balanced** exercise routine.  
+
+✅ **Overweight** – Implement **fat-burning** workouts and **healthy eating habits**.  
+
+✅ **Obese** – Prioritize **low-impact exercises** and **gradual weight loss strategies**.  
+
+
+
+The calculator is **simple and user-friendly**, requiring only two inputs: **weight (kg)** and **height (cm)**. After pressing the **Calculate** button, the system processes the data and provides a **clear BMI result** along with a **category description**. This **guides users** toward an **effective and personalized workout plan**.
+
+
+
+### 💡 Interactive Workout Highlighting
+
+✔️ The system **highlights** the **most suitable workout plan** for the user.  
+
+✔️ The **corresponding exercise category turns yellow**, providing a **clear visual cue**.  
+
+✔️ Users can easily **navigate** to their **personalized fitness plan** without confusion.  
+
+
+
+📌 **Regular use of the BMI Calculator** helps users **track progress** as their **weight and body composition** change over time.
+
 
 ---
 
+
+## Exercises for You 🏋️‍♀️
+
+<img src="assets/images/group-workout.png" width="350">
+
+
+
+One of the most **unique features** of the **Ivan’s Fitness** platform is the **interactive exercise recommendation system**. This feature ensures that users **don’t need to guess** which workout plan **suits them best**—the platform does it **automatically**. After users calculate their BMI, the **most appropriate exercise plan** is **highlighted in yellow**, making it **easy to identify** the best training approach for their needs.
+
+
+
+### 🔍 How It Works:
+
+1️⃣ **User inputs height and weight** into the **BMI Calculator**.  
+
+2️⃣ The system **calculates BMI** and assigns a **category** _(e.g., Underweight, Normal, Overweight)_.  
+
+3️⃣ The **corresponding workout card turns yellow**, visually guiding users to their **recommended exercise plan**.  
+
+4️⃣ The user can explore **detailed workout routines**, including:
+
+   - 🏋️ **Exercise frequency** – How often to train for best results.  
+
+   - 🍏 **Nutrition tips** – Meal recommendations based on body goals.  
+
+   - 💧 **Hydration advice** – Daily water intake recommendations.  
+
+   - 😴 **Recovery recommendations** – Rest and sleep strategies.  
+
+
+
+By following the **recommended plan**, users can see **better results** and stay committed to their **fitness journey** without feeling overwhelmed.
+
+<img src="assets/images/group-workout.png" width="350">
 <img src="assets/images/caloric-calculator.jpeg" width="300">
 
 ## Caloric Calculator 🔥
