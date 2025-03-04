@@ -153,7 +153,7 @@
     function redirectToThankYou(event) {
         event.preventDefault(); // Zabrání reloadu stránky
 
-        emailjs.sendForm("service_deaup5m", "template_gginm2c", event.target)
+        emailjs.sendForm("service_deaup5m", "template_aiamii9", event.target)
             .then(function() {
                 alert("Email byl úspěšně odeslán!");
                 window.location.href = "thankyou.html"; // Přesměrování po odeslání
