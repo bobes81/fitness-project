@@ -14,14 +14,13 @@
   <!--fontawesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-
- <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-<link rel="manifest" href="assets/favicon/site.webmanifest">
-
-
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+</head>
+<body>
   <!-- Hamburger Menu -->
   <div class="menu-container">
     <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -41,7 +40,7 @@
   <div class="background-overlay"></div>
 
   <!-- Welcome Section -->
-<header id="welcome" class="box">
+  <header id="welcome" class="box">
     <!-- Welcome banner -->
     <img src="assets/images/welcome.png" 
          alt="Welcome to Ivan's Fitness" 
@@ -77,8 +76,7 @@
             <strong>Your transformation starts today!</strong>
         </p>
     </div>
-</header>
-
+  </header>
 
   <!-- Inspiration Section -->
   <section id="inspiration" class="box">
@@ -101,9 +99,9 @@
     <input type="number" id="bmi-height" placeholder="Enter your height">
     <button id="bmi-calculate-btn">Calculate</button>
     <p id="bmi-result"></p>
-</section>
+  </section>
 
-<section id="exercises" class="box">
+  <section id="exercises" class="box">
     <img src="assets/images/group-workout.png" 
          alt="Exercises" class="section-image" width="600" height="400" loading="lazy">
     <h2>Exercises for You</h2>
@@ -188,7 +186,7 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
 
   <!-- The Power of Change Section -->
   <section id="power-of-change" class="box">
@@ -239,19 +237,19 @@
 </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="box">
-    <img src="assets/images/contact-card.png" alt="Contact Me" class="section-image" width="600" height="400" loading="lazy">
-    <h2>Contact Me</h2>
-    <form onsubmit="redirectToThankYou(event)">
-      <label for="name">Name:</label>
-      <input type="text" id="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" rows="4" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+  <form id="contactForm" method="post" onsubmit="redirectToThankYou(event)" action="#">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="from_name" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="reply_to" required>
+  
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+  
+    <button type="submit">Send</button>
+  </form>
+  
 
   <footer>
     <p>&copy; 2024 Ivan's Fitness</p>
@@ -268,7 +266,11 @@
         <i class="fa-brands fa-youtube"></i>
       </a>
     </div>
-</footer>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+     emailjs.init("3qAMI9LF7yenmzmPT");
+  </script>
 </body>
 </html>

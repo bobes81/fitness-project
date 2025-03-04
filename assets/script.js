@@ -40,9 +40,15 @@
         }
 
         // Attach event listener for Caloric calculation
-        const calorieButton = document.getElementById("calorie-calculate-btn");
+        const calorieButton = document.getElementById("caloric-calculator").querySelector("button");
         if (calorieButton) {
             calorieButton.addEventListener("click", calculateCalories);
+        }
+
+        // Attach event listener for Contact Form submission
+        const contactForm = document.querySelector("#contactForm");
+        if (contactForm) {
+            contactForm.addEventListener("submit", redirectToThankYou);
         }
     });
 
@@ -100,7 +106,6 @@
             case "Normal Weight": index = 1; break;
             case "Overweight": index = 2; break;
             case "Obese": index = 3; break;
-            case "Muscle Building": index = 4; break;
         }
 
         if (exerciseCards[index]) {
@@ -143,11 +148,22 @@
     }
 
     /**
-     * Redirect to Thank You page after form submission
+     * Odeslání formuláře přes EmailJS a přesměrování na Thank You stránku
      */
     function redirectToThankYou(event) {
-        event.preventDefault();
-        window.location.href = "thankyou.html";
+        event.preventDefault(); // Zabrání reloadu stránky
+
+        console.log("Odesílám data:", new FormData(event.target)); // DEBUG
+
+        emailjs.sendForm("service_deaup5m", "template_gginm2c", event.target)
+            .then(function(response) {
+                console.log("Email úspěšně odeslán", response); // DEBUG
+                alert("Email byl úspěšně odeslán!");
+                window.location.href = "thankyou.html"; // Přesměrování po odeslání
+            }, function(error) {
+                console.error("Chyba při odesílání emailu:", error); // DEBUG
+                alert("Chyba při odesílání emailu: " + error.text);
+            });
     }
 
     /**
@@ -156,7 +172,7 @@
     document.addEventListener("DOMContentLoaded", function () {
         const bmiButton = document.querySelector("#bmi-calculate-btn");
         const calorieButton = document.querySelector("#caloric-calculator button");
-        const contactForm = document.querySelector("#contact form");
+        const contactForm = document.querySelector("#contactForm");
 
         if (bmiButton) bmiButton.addEventListener("click", calculateBMI);
         if (calorieButton) calorieButton.addEventListener("click", calculateCalories);
