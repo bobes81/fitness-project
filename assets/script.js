@@ -155,10 +155,10 @@
 
         emailjs.sendForm("service_deaup5m", "template_aiamii9", event.target)
             .then(function() {
-                alert("Email byl úspěšně odeslán!");
+                alert("The email was sent successfully!");
                 window.location.href = "thankyou.html"; // Přesměrování po odeslání
             }, function(error) {
-                alert("Chyba při odesílání emailu: " + error.text);
+                alert("Error sending email: " + error.text);
             });
     }
 
