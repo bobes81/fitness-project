@@ -19,33 +19,140 @@ body {
   z-index: -1;
 }
 
-/* Header */
-.welcome-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+/* Welcome Section */
+#welcome {
+  text-align: center;
+  padding: 30px;
   background: white;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border: 2px solid #29AB87; /* Light green border for sections */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border: 2px solid #29AB87;
+  max-width: 900px;
+  margin: 40px auto;
 }
 
-/* Welcome Image */
-.welcome-image {
-  max-width: 80%;
-  height: auto;
-  display: block;
-  margin: auto;
-  border-radius: 10px;
+/* Welcome banner - hlavní obrázek */
+.section-image {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto; /* Centrování obrázku */
 }
 
-/* Welcome Text */
+/* Kontejner pro text */
 .welcome-text {
-  max-width: 60%;
+  background: rgba(255, 255, 255, 0.9); /* Světlé průhledné pozadí */
+  color: #333;
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 10px;
   text-align: left;
+}
+
+/* Zvýraznění prvních vět */
+.intro-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1B4D3E; /* Tmavě zelená barva */
+}
+
+/* Seznam výhod */
+.welcome-list {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.welcome-list li {
+  padding: 8px 0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.welcome-list li::before {
+  content: "✔️";
+  color: #29AB87;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Kroky použití */
+.welcome-steps {
+  padding-left: 20px;
+}
+
+.welcome-steps li {
+  padding: 5px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Finální zpráva */
+.final-message {
+  font-style: italic;
+  font-weight: bold;
+  color: #1B4D3E;
+  margin-top: 15px;
+}
+
+/* 📱 Responzivní úpravy */
+@media (max-width: 768px) {
+  .welcome-text {
+    padding: 20px;
+    max-width: 90%;
+  }
+}
+
+/* Finální zpráva */
+.final-message {
+  font-style: italic;
+  font-weight: bold;
+  color: #1B4D3E;
+  margin-top: 15px;
+}
+
+/* Barevné pozadí pro sekce */
+.box {
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border: 2px solid #29AB87;
+  max-width: 900px; /* Zajistí stejné zarovnání */
+  margin-bottom: 20px; /* Rovnoměrné mezery mezi sekcemi */
+}
+
+/* Odstranění horního border u všech sekcí kromě první */
+.box:not(:first-of-type) {
+  border-top: none;
+}
+
+/* Odstranění spodního border u všech sekcí kromě poslední */
+.box:not(:last-of-type) {
+  border-bottom: none;
+}
+
+/* 📱 Responzivita pro mobily */
+@media (max-width: 768px) {
+  .welcome-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .welcome-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .welcome-text {
+    max-width: 100%;
+  }
 }
 
 /* Hamburger Menu */
@@ -111,14 +218,14 @@ body {
 
 /* Section Styling */
 .box {
-  max-width: 1000px;
   margin: 40px auto;
-  padding: 20px;
+  padding: 30px;
   background: white;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-  border: 2px solid #29AB87; /* Light green border for sections */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border: 2px solid #29AB87;
+  max-width: 900px; /* Zajistí stejné zarovnání */
+  margin-bottom: 20px; /* Rovnoměrné mezery mezi sekcemi */
 }
 
 /* Section Images */
@@ -127,9 +234,10 @@ body {
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 /* Exercise Cards */
@@ -262,14 +370,13 @@ body {
 
 /* Contact Section */
 #contact {
-  max-width: 1000px;
   margin: 40px auto;
-  padding: 20px;
+  padding: 30px;
   background: white;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-  border: 2px solid #29AB87; /* Light green border for sections */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border: 2px solid #29AB87;
+  max-width: 900px; /* Zajistí stejné zarovnání */
 }
 
 #contact form {
@@ -326,62 +433,128 @@ body {
 
 /* Caloric Calculator Section */
 #caloric-calculator {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border: 2px solid #29AB87; /* Stejný styl jako ostatní sekce */
+  max-width: 900px; /* Zabrání tomu, aby kalkulátor byl moc široký na PC */
+  margin: 40px auto; /* Centrované zarovnání */
+  padding: 30px;
 }
 
-#calorieForm {
+#caloric-calculator form {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Všechny prvky v jednom sloupci */
+  align-items: center; /* Zarovnání na střed */
+  width: 100%;
+}
+
+/* Zajištění stejné velikosti pro všechny inputy a select boxy */
+#caloric-calculator input,
+#caloric-calculator select {
+  width: calc(100% - 20px); /* Stejná šířka */
+  max-width: 400px; /* Maximální šířka na větších obrazovkách */
+  padding: 12px; /* Stejný padding */
+  height: 45px; /* Stejná výška */
+  border: 2px solid #29AB87; /* Stejné ohraničení */
+  border-radius: 8px; /* Stejné zaoblení rohů */
+  font-size: 1rem; /* Stejná velikost písma */
+  background-color: #f9f9f9; /* Stejná barva pozadí */
+  display: block; /* Zajistí správné zarovnání */
+  margin: 0 auto 10px auto; /* Centrované zarovnání s mezerou mezi poli */
+  line-height: 1.2; /* Vycentrování textu */
+}
+
+/* Speciální oprava pro select boxy */
+#caloric-calculator select {
+  appearance: none; /* Zbaví select box nativních stylů prohlížeče */
+  text-align: left; /* Zajistí správné zarovnání textu */
+}
+
+/* Zajištění stejné velikosti pro všechny inputy a select boxy */
+#calorie-gender, 
+#calorie-weight, 
+#calorie-height, 
+#calorie-age, 
+#calorie-activity {
+  width: calc(100% - 20px); /* Stejná šířka */
+  max-width: 400px; /* Maximální šířka na větších obrazovkách */
+  padding: 12px; /* Stejný padding */
+  height: 45px; /* Stejná výška */
+  border: 2px solid #29AB87; /* Stejné ohraničení */
+  border-radius: 8px; /* Stejné zaoblení rohů */
+  font-size: 1rem; /* Stejná velikost písma */
+  background-color: #f9f9f9; /* Stejná barva pozadí */
+  display: block; /* Zajistí správné zarovnání */
+  margin: 0 auto 10px auto; /* Centrované zarovnání s mezerou mezi poli */
+  line-height: 1.2; /* Vycentrování textu */
+}
+
+/* Speciální oprava pro select boxy */
+#calorie-gender, 
+#calorie-activity {
+  appearance: none; /* Zbaví select box nativních stylů prohlížeče */
+  text-align: left; /* Zajistí správné zarovnání textu */
+}
+
+/* Ujistit se, že labely jsou zarovnané stejně jako inputy */
+#caloric-calculator label {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  gap: 15px;
-  max-width: 400px;
-  margin: auto;
-}
-
-#calorieForm label {
+  width: calc(100% - 20px); /* Zarovnání k levému okraji inputů */
+  max-width: 400px; /* Stejné max-width */
+  margin: 0 auto 5px auto;
   font-weight: bold;
 }
 
-#calorieForm input,
-#calorieForm select {
-  padding: 10px;
-  width: 100%;
-  max-width: 400px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-#calorieForm button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
+/* Button také sjednocený */
+#caloric-calculator button {
+  width: calc(100% - 20px); /* Stejná šířka */
+  max-width: 300px; /* Maximální šířka */
+  margin: 10px auto; /* Zarovnání na střed */
+  padding: 12px;
   border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
   cursor: pointer;
-  width: 100%;
-  max-width: 400px;
-  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
 }
 
-#calorieForm button:hover {
-  background-color: #45a049;
+#caloric-calculator button:hover {
+  background-color: #1B4D3E;
+  transform: scale(1.05);
 }
 
+/* Výsledná hodnota */
 #calorie-result {
-  font-size: 1.2em;
+  font-size: 1.4rem;
   font-weight: bold;
-  margin-top: 20px;
+  color: #1B4D3E;
+  margin-top: 15px;
+  padding: 10px;
+  background: #EADDCA;
+  border-radius: 8px;
+  display: inline-block;
+  width: auto;
 }
 
-#result {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-top: 20px;
+/* Mobilní responzivita */
+@media (max-width: 600px) {
+  #caloric-calculator {
+    max-width: 95%;
+    padding: 20px;
+  }
+
+  #caloric-calculator input,
+  #caloric-calculator select {
+    width: 100%; /* Na mobilech bude 100% šířky */
+    max-width: none;
+    font-size: 1rem; /* Lepší čitelnost */
+    height: 50px; /* Větší výška */
+  }
+
+  #caloric-calculator button {
+    font-size: 1rem;
+    width: 100%;
+  }
 }
 
 /* Responsive Design */
@@ -390,20 +563,36 @@ body {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .welcome-image {
-    max-width: 80%;
-  }
-  
-  .welcome-text {
     max-width: 100%;
+    margin-top: 15px;
+  }
+
+  .welcome-text {
+    font-size: 1rem;
     text-align: center;
   }
 
-  .exercise-card {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
+  .intro-text {
+    font-size: 1.2rem;
+  }
+
+  .welcome-list li {
+    font-size: 1rem;
+  }
+
+  .welcome-steps li {
+    font-size: 1rem;
+  }
+
+  .before-after-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .before-after-image {
+    max-width: 80%;
   }
 }
 
@@ -449,41 +638,37 @@ footer a:hover {
   color: #29AB87;
   transform: scale(1.2);
 }
-footer {
-  background-color: #1B4D3E;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  border-top: 3px solid #29AB87;
-  border: 2px solid #29AB87;
+/* 🛠 Sjednocení velikosti pro všechny inputy a select boxy */
+#caloric-calculator input,
+#caloric-calculator select {
+  width: calc(100% - 20px); /* Stejná šířka */
+  max-width: 400px; /* Maximální šířka */
+  padding: 12px; /* Stejný padding */
+  height: 45px; /* Stejná výška */
+  border: 2px solid #29AB87; /* Ohraničení */
+  border-radius: 8px; /* Zaoblené rohy */
+  font-size: 1rem; /* Stejná velikost písma */
+  background-color: #f9f9f9; /* Světlé pozadí */
+  display: block; /* Správné zarovnání */
+  margin: 0 auto 10px auto; /* Centrované zarovnání */
+  line-height: normal; /* Oprava textu uvnitř */
+  box-sizing: border-box; /* Oprava šířky */
 }
 
-footer a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+/* 🔹 Specifické opravy pro select boxy */
+#caloric-calculator select {
+  appearance: none; /* Odstranění defaultních stylů prohlížeče */
+  text-align: left; /* Zarovnání textu */
 }
 
-footer a:hover {
-  color: #29AB87;
-  text-decoration: underline;
+/* 🔹 Oprava pro activity level */
+#calorie-activity {
+  height: 45px !important; /* Oprava výšky */
+  padding: 12px !important; /* Oprava paddingu */
 }
 
-.social-links {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.social-links a {
-  font-size: 24px;
-  color: white;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #29AB87;
-  transform: scale(1.2);
+/* 🔹 Oprava pro gender select */
+#calorie-gender {
+  height: 45px !important;
+  padding: 12px !important;
 }
