@@ -124,7 +124,7 @@ A key aspect of any **fitness journey** is managing **caloric intake**. The **Ca
 Once users input their details, the calculator provides an estimate of **daily caloric needs**, helping them understand how much they should eat to maintain, gain, or lose weight.
 
 ---
-<img src="assets/images/favicon.jpeg" width="250">
+<img src="assets/images/favicon.jpg" width="250">
 
 ## Favicon
 A **custom favicon** was implemented to enhance branding and improve user experience. The favicon:
@@ -135,7 +135,7 @@ A **custom favicon** was implemented to enhance branding and improve user experi
 The favicon is stored in the `assets/favicon/` directory and applied in the HTML `<head>` section.
 
 ---
-<img src="assets/images/favicon.jpeg" width="250">
+<img src="assets/images/404.jpg" width="250">
 
 ## 404 Page 
 A **custom 404 page** was created to handle cases where users access a **non-existent page**. This page:
