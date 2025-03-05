@@ -24,7 +24,7 @@ The **Ivan’s Fitness** project was built to address the common challenges peop
 This project was developed using **HTML, CSS, and JavaScript**, deployed via **GitHub Pages**, and tested for **performance, accessibility, and cross-browser compatibility**.
 
 ---
-<img src="assets/images/menu-github.jpeg" width="300">
+<img src="assets/images/menu1.jpeg" width="300">
 
 ## Navigation Menu 
 
@@ -34,6 +34,7 @@ The website includes an **intuitive and responsive navigation menu** that allows
 - **Home** – The main landing page with an overview of the website.
 - **Get Inspired** – A section with motivational content.
 - **BMI Calculator** – A tool to assess body composition and suggest workout plans.
+- **The Power of Change** – A motivational section encouraging personal transformation through fitness and a healthy lifestyle.
 - **Exercises** – A section with exercise recommendations based on BMI.
 - **Caloric Calculator** – A tool to calculate daily caloric intake requirements.
 - **Contact** – A section where users can reach out for personalized fitness guidance.
