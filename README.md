@@ -213,11 +213,14 @@ The **JavaScript** code used in this project was tested using **JSHint**, a wide
 
 ---
 <img src="assets/images/deployment.jpg" width="300">
-## Deployment 
-The project was **deployed on GitHub Pages** following these steps:
-1. **Code pushed to GitHub Repository**.
-2. **GitHub Pages enabled** in repository settings.
-3. **Live link generated for public access**.
+
+## Deployment  
+
+The project was **deployed on GitHub Pages** following these steps:  
+
+1. **Code pushed to GitHub Repository**.  
+2. **GitHub Pages enabled** in repository settings.  
+3. **Live link generated for public access**.  
 
 ### Run Locally 
 To run this project on your local machine:
@@ -231,11 +234,12 @@ The website is available at:
 
 ---
 <img src="assets/images/version.jpg" width="300">
-## Version Control 
-- The project was developed using **VS Code**.
-- Version control was managed via **Git & GitHub**.
-- Changes were tracked using **meaningful commit messages**.
 
+## Version Control  
+
+- The project was developed using **VS Code**.  
+- Version control was managed via **Git & GitHub**.  
+- Changes were tracked using **meaningful commit messages**.  
 ---
 
 
