@@ -119,14 +119,14 @@
     function calculateCalories(event) {
         if (event) event.preventDefault(); // Zabrání obnovení stránky
 
-        // Načtení hodnot z formuláře
+        // Retrieving values ​​from a form
         let gender = document.getElementById("calorie-gender").value;
         let weight = parseFloat(document.getElementById("calorie-weight").value);
         let height = parseFloat(document.getElementById("calorie-height").value);
         let age = parseInt(document.getElementById("calorie-age").value);
         let activityLevel = parseFloat(document.getElementById("calorie-activity").value);
 
-        // Kontrola, zda jsou hodnoty vyplněny
+        // Checking if values ​​are filled in
         if (isNaN(weight) || isNaN(height) || isNaN(age)) {
             document.getElementById("calorie-result").innerHTML = "<span style='color: red;'>Please enter all values!</span>";
             return;
