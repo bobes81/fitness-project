@@ -9,7 +9,8 @@ This project aims to educate and inspire users to maintain a **healthy lifestyle
 
 ---
 <img src="assets/images/ivan-profile.png" width="300">
-## About the Project 
+
+## About the Project
 
 The **Ivan’s Fitness** project was built to address the common challenges people face in achieving fitness goals. It provides **personalized workout plans** based on BMI categories and caloric needs, making it easier for users to understand how to train and eat correctly. The website includes a **BMI Calculator**, a **Caloric Calculator**, and a dedicated section for workout plans tailored to different fitness levels.
 
@@ -23,9 +24,10 @@ The **Ivan’s Fitness** project was built to address the common challenges peop
 This project was developed using **HTML, CSS, and JavaScript**, deployed via **GitHub Pages**, and tested for **performance, accessibility, and cross-browser compatibility**.
 
 ---
+<img src="assets/images/menu-github.jpeg" width="300">
 
 ## Navigation Menu 
-<img src="assets/images/menu-github.jpeg" width="300">
+
 
 The website includes an **intuitive and responsive navigation menu** that allows users to explore various sections easily. The navigation bar includes:
 
@@ -123,6 +125,7 @@ Once users input their details, the calculator provides an estimate of **daily c
 
 ---
 <img src="assets/images/favicon.jpeg" width="250">
+
 ## Favicon
 A **custom favicon** was implemented to enhance branding and improve user experience. The favicon:
 - Helps users quickly identify the website in browser tabs.
@@ -133,6 +136,7 @@ The favicon is stored in the `assets/favicon/` directory and applied in the HTML
 
 ---
 <img src="assets/images/favicon.jpeg" width="250">
+
 ## 404 Page 
 A **custom 404 page** was created to handle cases where users access a **non-existent page**. This page:
 - Displays a friendly **error message**.
@@ -170,6 +174,7 @@ After submitting the **contact form**, users are redirected to a **Thank You pag
 
 ---
 <img src="assets/images/designe.jpg" width="300">
+
 ## Design 
 
 The design philosophy of **Ivan’s Fitness** focuses on **clarity, motivation, and accessibility**. The color scheme includes:
@@ -187,14 +192,16 @@ The design philosophy of **Ivan’s Fitness** focuses on **clarity, motivation, 
 
 ---
 <img src="assets/images/testing.jpg" width="300">
+
 ## Testing & Validation 
 
 The project was tested using **W3C validation tools** to ensure **HTML, CSS, and JavaScript** meet web standards.
 
 HTML validation 
-<img src="assets/images/html-github.jpg" width="300">
+<img src="assets/images/html-github.jpg" width="250">
+
 CSS validation
-<img src="assets/images/css-github.jpg" width="300">
+<img src="assets/images/css-github.jpg" width="250">
 
 The **JavaScript** code used in this project was tested using **JSHint**, a widely recognized JavaScript code quality tool.  
 **Result:** ✅ No errors were detected.
@@ -232,7 +239,8 @@ The website is available at:
 ---
 
 
-<img src="assets/images/credits.jpeg" width="300">
+<img src="assets/images/credits.jpg" width="300">
+
 ## Credits 
 - **Development:** Ivan Kimpl
 - **Mentorship:** Gareth Mc Girr
