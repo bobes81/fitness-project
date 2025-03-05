@@ -176,20 +176,30 @@ After submitting the **contact form**, users are redirected to a **Thank You pag
 ---
 <img src="assets/images/designe.jpg" width="300">
 
-## Design 
+## Design  
 
-The design philosophy of **Ivan’s Fitness** focuses on **clarity, motivation, and accessibility**. The color scheme includes:
-- **Green (#4CAF50)** – A calming and health-focused color.
-- **White (#FFFFFF)** – Clean and modern aesthetics.
-- **Black (#000000)** – High contrast for readability.
+The design philosophy of **Ivan’s Fitness** focuses on **clarity, motivation, and accessibility**. The color scheme includes:  
+
+- **Green (#29AB87)** – A fresh and energetic color used for accents and highlighting key elements.  
+- **Dark Green (#1B4D3E)** – Provides contrast and is used for buttons, headers, and menu backgrounds.  
+- **Beige (#EADDCA)** – A soft and warm background color that enhances readability.  
+- **White (#FFFFFF)** – Ensures a clean and modern aesthetic for section backgrounds and text areas.  
+- **Black (#000000)** – High contrast for important text elements.  
+- **Gold (#FFD700)** – Used for highlighting selected exercise cards to draw attention.  
+
+This combination creates a visually balanced design that is easy on the eyes while emphasizing important content.
 
 ---
+<img src="assets/images/techology.jpg" width="300">
 
-## Technologies Used 💻
+## Technologies Used 
+
 - **HTML5** – Structural foundation.
 - **CSS3** – Styling and responsive design.
 - **JavaScript** – Interactivity and logic.
 - **Git & GitHub** – Version control and deployment.
+- **AI-Generated Images**: All images used in this project were created using AI tools to ensure originality and avoid copyright concerns.
+- **ChatGPT Assistance**: This project also benefited from ChatGPT’s debugging, and improving the overall user experience.
 
 ---
 <img src="assets/images/testing.jpg" width="300">
@@ -250,5 +260,4 @@ The website is available at:
 - **Development:** Ivan Kimpl
 - **Mentorship:** Gareth Mc Girr
 - **Resources:** Code Institute, W3C Validators, Mozilla Dev Docs
-- **AI-Generated Images**: All images used in this project were created using AI tools to ensure originality and avoid copyright concerns.
-- **ChatGPT Assistance**: This project also benefited from ChatGPT’s guidance, which provided support in structuring content, debugging, and improving the overall user experience.
+
