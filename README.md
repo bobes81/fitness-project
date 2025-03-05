@@ -38,7 +38,7 @@ The website includes an **intuitive and responsive navigation menu** that allows
 - **Caloric Calculator** – A tool to calculate daily caloric intake requirements.
 - **Contact** – A section where users can reach out for personalized fitness guidance.
 
-The navigation bar remains **fixed at the top**, ensuring easy access to all sections across devices.
+
 ---
 
 ## BMI Calculator 
