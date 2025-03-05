@@ -34,8 +34,8 @@ The website includes an **intuitive and responsive navigation menu** that allows
 - **Home** – The main landing page with an overview of the website.
 - **Get Inspired** – A section with motivational content.
 - **BMI Calculator** – A tool to assess body composition and suggest workout plans.
-- **The Power of Change** – A motivational section encouraging personal transformation through fitness and a healthy lifestyle.
 - **Exercises** – A section with exercise recommendations based on BMI.
+- **The Power of Change** – A motivational section encouraging personal transformation through fitness and a healthy lifestyle.
 - **Caloric Calculator** – A tool to calculate daily caloric intake requirements.
 - **Contact** – A section where users can reach out for personalized fitness guidance.
 
