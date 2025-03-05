@@ -2,15 +2,14 @@
 
 # Ivan's Fitness - Your Path to a Healthier Life
 
-## Introduction 🏋️‍♂️
+## Introduction 
 Welcome to **Ivan's Fitness**, a web application designed to help individuals achieve their fitness goals through structured workout plans, interactive calculators, and motivational content. This platform provides users with essential tools such as a **BMI Calculator** and a **Caloric Calculator**, helping them tailor their fitness journey based on personalized data.
 
 This project aims to educate and inspire users to maintain a **healthy lifestyle**, offering custom workout plans and nutritional guidance for different body types. By integrating interactive elements, real-life transformation stories, and user-friendly features, **Ivan’s Fitness** is more than just a fitness guide – it’s a step towards a **better you**.
 
 ---
-
-## About the Project 📌
 <img src="assets/images/ivan-profile.png" width="300">
+## About the Project 
 
 The **Ivan’s Fitness** project was built to address the common challenges people face in achieving fitness goals. It provides **personalized workout plans** based on BMI categories and caloric needs, making it easier for users to understand how to train and eat correctly. The website includes a **BMI Calculator**, a **Caloric Calculator**, and a dedicated section for workout plans tailored to different fitness levels.
 
@@ -25,7 +24,7 @@ This project was developed using **HTML, CSS, and JavaScript**, deployed via **G
 
 ---
 
-## Navigation Menu 🔍
+## Navigation Menu 
 <img src="assets/images/menu-github.jpeg" width="300">
 
 The website includes an **intuitive and responsive navigation menu** that allows users to explore various sections easily. The navigation bar includes:
@@ -40,7 +39,7 @@ The navigation bar remains **fixed at the top**, ensuring easy access to all sec
 
 ---
 
-## BMI Calculator ⚖️
+## BMI Calculator 
 
 <img src="assets/images/bmi-calculator.png" width="300">
 
@@ -78,16 +77,11 @@ The calculator is **simple and user-friendly**, requiring only two inputs: **wei
 
 
 ---
-
-
-## Exercises for You 🏋️‍♀️
-
 <img src="assets/images/group-workout.png" width="350">
 
-
+## Exercises for You 
 
 One of the most **unique features** of the **Ivan’s Fitness** platform is the **interactive exercise recommendation system**. This feature ensures that users **don’t need to guess** which workout plan **suits them best**—the platform does it **automatically**. After users calculate their BMI, the **most appropriate exercise plan** is **highlighted in yellow**, making it **easy to identify** the best training approach for their needs.
-
 
 
 ### 🔍 How It Works:
@@ -116,7 +110,7 @@ By following the **recommended plan**, users can see **better results** and stay
 
 <img src="assets/images/caloric-calculator.jpeg" width="300">
 
-## Caloric Calculator 🔥
+## Caloric Calculator 
 
 A key aspect of any **fitness journey** is managing **caloric intake**. The **Caloric Calculator** helps users determine their **daily energy requirements** based on:
 - **Gender** (Male/Female)
@@ -129,7 +123,7 @@ Once users input their details, the calculator provides an estimate of **daily c
 
 ---
 <img src="assets/images/favicon.jpeg" width="250">
-## Favicon 🖼️
+## Favicon
 A **custom favicon** was implemented to enhance branding and improve user experience. The favicon:
 - Helps users quickly identify the website in browser tabs.
 - Maintains **visual consistency** with the website’s theme.
@@ -139,7 +133,7 @@ The favicon is stored in the `assets/favicon/` directory and applied in the HTML
 
 ---
 <img src="assets/images/favicon.jpeg" width="250">
-## 404 Page 🚫
+## 404 Page 
 A **custom 404 page** was created to handle cases where users access a **non-existent page**. This page:
 - Displays a friendly **error message**.
 - Provides a **redirect link** back to the homepage.
@@ -151,7 +145,7 @@ The `404.html` file is included in the root directory for seamless integration.
 
 <img src="assets/images/contact-card.png" width="300">
 
-## Contact Form 📩
+## Contact Form 
 
 The **Contact Form** allows users to send inquiries or request personalized fitness guidance.
 
@@ -167,7 +161,7 @@ This ensures smooth communication and enhances **user engagement**.
 
 <img src="assets/images/thankyou.jpg" width="300">
 
-## Thank You Page 🎉
+## Thank You Page 
 
 After submitting the **contact form**, users are redirected to a **Thank You page**, confirming that their message has been received. This page:
 - Acknowledges the user’s submission.
@@ -175,8 +169,71 @@ After submitting the **contact form**, users are redirected to a **Thank You pag
 - Provides additional contact details for urgent inquiries.
 
 ---
+<img src="assets/images/designe.jpg" width="300">
+## Design 
+
+The design philosophy of **Ivan’s Fitness** focuses on **clarity, motivation, and accessibility**. The color scheme includes:
+- **Green (#4CAF50)** – A calming and health-focused color.
+- **White (#FFFFFF)** – Clean and modern aesthetics.
+- **Black (#000000)** – High contrast for readability.
+
+---
+
+## Technologies Used 💻
+- **HTML5** – Structural foundation.
+- **CSS3** – Styling and responsive design.
+- **JavaScript** – Interactivity and logic.
+- **Git & GitHub** – Version control and deployment.
+
+---
+<img src="assets/images/testing.jpg" width="300">
+## Testing & Validation 
+
+The project was tested using **W3C validation tools** to ensure **HTML, CSS, and JavaScript** meet web standards.
+
+HTML validation 
+<img src="assets/images/html-github.jpg" width="300">
+CSS validation
+<img src="assets/images/css-github.jpg" width="300">
+
+The **JavaScript** code used in this project was tested using **JSHint**, a widely recognized JavaScript code quality tool.  
+**Result:** ✅ No errors were detected.
+
+### Key Testing Points:
+- ✅ **Accessibility** – Verified using Lighthouse for web standards compliance.
+- ✅ **Functional Testing** – Ensured all interactive elements work correctly.
+- ✅ **Cross-Browser Compatibility** – Tested on Chrome, Firefox, and Edge.
+
+---
+<img src="assets/images/deployment.jpg" width="300">
+## Deployment 
+The project was **deployed on GitHub Pages** following these steps:
+1. **Code pushed to GitHub Repository**.
+2. **GitHub Pages enabled** in repository settings.
+3. **Live link generated for public access**.
+
+### Run Locally 
+To run this project on your local machine:
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/bobes81/fitness-project.git
+
+
+The website is available at:  
+🔗 **[Ivan's Fitness Live Version](https://bobes81.github.io/fitness-project/)**
+
+---
+<img src="assets/images/version.jpg" width="300">
+## Version Control 
+- The project was developed using **VS Code**.
+- Version control was managed via **Git & GitHub**.
+- Changes were tracked using **meaningful commit messages**.
+
+---
+
+
 <img src="assets/images/credits.jpeg" width="300">
-## Credits 🙌
+## Credits 
 - **Development:** Ivan Kimpl
 - **Mentorship:** Gareth Mc Girr
 - **Resources:** Code Institute, W3C Validators, Mozilla Dev Docs
