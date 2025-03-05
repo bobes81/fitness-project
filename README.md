@@ -32,13 +32,13 @@ This project was developed using **HTML, CSS, and JavaScript**, deployed via **G
 The website includes an **intuitive and responsive navigation menu** that allows users to explore various sections easily. The navigation bar includes:
 
 - **Home** – The main landing page with an overview of the website.
+- **Get Inspired** – A section with motivational content.
 - **BMI Calculator** – A tool to assess body composition and suggest workout plans.
 - **Exercises** – A section with exercise recommendations based on BMI.
 - **Caloric Calculator** – A tool to calculate daily caloric intake requirements.
 - **Contact** – A section where users can reach out for personalized fitness guidance.
 
 The navigation bar remains **fixed at the top**, ensuring easy access to all sections across devices.
-
 ---
 
 ## BMI Calculator 
@@ -170,7 +170,7 @@ This ensures smooth communication and enhances **user engagement**.
 After submitting the **contact form**, users are redirected to a **Thank You page**, confirming that their message has been received. This page:
 - Acknowledges the user’s submission.
 - Encourages further engagement with the website.
-- Provides additional contact details for urgent inquiries.
+
 
 ---
 <img src="assets/images/designe.jpg" width="300">
