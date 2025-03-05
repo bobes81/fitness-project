@@ -41,11 +41,9 @@ The website includes an **intuitive and responsive navigation menu** that allows
 
 
 ---
-
-## BMI Calculator 
-
 <img src="assets/images/bmi-calculator.png" width="300">
 
+## BMI Calculator 
 
 
 The **BMI Calculator** is a fundamental tool on the **Ivan’s Fitness** platform, helping users assess their **body composition** and determine their **fitness category**. By entering **height and weight**, users receive an instant **Body Mass Index (BMI) score**, which categorizes them into one of several groups:
